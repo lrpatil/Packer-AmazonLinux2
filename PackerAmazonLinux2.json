@@ -23,10 +23,11 @@
 			"force_deregister": true,
 			"force_delete_snapshot": true,
 			"encrypt_boot": true,
+			"associate_public_ip_address":false,
 			"kms_key_id": "{{user `aws_kms_key_id`}}",
 			"ami_name": "{{user `output_ami_name`}}",
 			"tags": {
-				"Name": "AmazonLinux2-Goldem-AMI",
+				"Name": "AmazonLinux2-Golden-AMI",
 				"BuiltBy": "Packer",
 				"PackagesIncluded": "SSM|Python|AWSCLI"
 			}
